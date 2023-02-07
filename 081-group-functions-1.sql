@@ -6,7 +6,8 @@
 
 SELECT COUNT(*) AS "Count of Managers"
 FROM emp
-WHERE job = 'MANAGER' OR job = 'PRESIDENT';
+WHERE UPPER(job) = 'MANAGER' OR UPPER(job) = 'PRESIDENT'
+;
 
 
 -- End of File

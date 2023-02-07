@@ -4,9 +4,8 @@
 
 
 UPDATE emp
-SET    job = UPPER('SALES PERSON')
-WHERE  job = 'SALESMAN'
-;
+SET job = 'SALES PERSON'
+WHERE UPPER(job) = 'SALESMAN';
 
 SELECT  ename
 AS      'Name'

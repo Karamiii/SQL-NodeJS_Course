@@ -6,7 +6,7 @@
 SELECT DISTINCT job
 FROM emp
 JOIN dept ON emp.deptno = dept.deptno
-WHERE dept.loc = 'BOSTON' OR dept.loc = 'NEW YORK'
+WHERE UPPER(dept.loc) = 'BOSTON' OR UPPER(dept.loc) = 'NEW YORK'
 ORDER BY job;
 
 

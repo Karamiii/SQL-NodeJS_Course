@@ -6,8 +6,8 @@ SELECT ename
        , job
        , sal
 FROM    emp
-WHERE   (LOWER(job = 'CLERK' OR job = 'ANALYST'))
-AND (sal <> 1000 AND sal <> 5000);
+WHERE   UPPER(job) = 'CLERK' OR UPPER(job) = 'ANALYST'
+AND (sal <> 1000 AND sal <> 5000)
 ;
 
 -- End of file
