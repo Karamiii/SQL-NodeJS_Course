@@ -5,7 +5,7 @@
 
 SELECT  ename
 AS      "Name"
-        ,  (COALESCE(sal, 0) * 0.69) + (COALESCE(comm, 0) * 0.8)
+        ,  (sal * 0.69) + (COALESCE(comm, 0) * 0.8)
 AS      "Net Income"
         ,  (sal * 0.31) + (COALESCE(comm, 0) * 0.2)
 AS      "Tax"
@@ -20,7 +20,7 @@ FROM emp
 ORDER BY "Net Income" ASC;
 
 
-COALESCE(comm, 0))
+COALESCE(comm, 0)
 
 
 

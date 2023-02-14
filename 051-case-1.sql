@@ -3,18 +3,18 @@
 -- File: 051-case-1.sql
 
 
-UPDATE emp
-SET job = 'SALES PERSON'
-WHERE UPPER(job) = 'SALESMAN';
 
-SELECT  ename
-AS      'Name'
-        ,    job
-AS      'New Job Name'
-FROM    emp
-ORDER BY job ASC
-        ,    ename ASC
-;
+
+SELECT ename AS "Name"
+        , 'SALES PERSON'
+AS      "New Job Name"
+FROM emp
+WHERE UPPER(job) = 'SALESMAN'
+UNION
+SELECT ename, job AS new_job
+FROM emp
+WHERE UPPER(job) <> 'SALESMAN'
+ORDER BY new_job ASC, ename ASC;
 
 
 

@@ -5,7 +5,8 @@
 
 SELECT ename,
 CASE
-WHEN ename LIKE 'A%' OR ename LIKE 'M%' OR ename LIKE 'J%' THEN LOWER(job)
+WHEN UPPER(ename) LIKE 'A%' OR ename LIKE 'M%' OR ename LIKE 'J%'
+THEN LOWER(job)
 ELSE job
 END AS job
 FROM emp

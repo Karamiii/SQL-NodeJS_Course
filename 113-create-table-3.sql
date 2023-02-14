@@ -5,12 +5,12 @@
 
 
 CREATE TABLE weather (
-  id INTEGER PRIMARY KEY NOT NULL,
-  time_of_reading DATETIME NOT NULL,
+  id INTEGER UNIQUE PRIMARY KEY NOT NULL,
+  time_of_reading TIMESTAMP NOT NULL,
   high NUMERIC,
   low NUMERIC,
-  sig VARCHAR(2) NOT NULL,
-  comment TEXT
+  sig VARCHAR(255) NOT NULL,
+  comment VARCHAR(10000)
 );
 
 

@@ -3,11 +3,10 @@
 -- File: 072-functions-2.sql
 
 
-SELECT ename AS Name, LENGTH(ename) AS Characters
-FROM emp
-ORDER BY LENGTH(ename), ename ASC
-;
 
+SELECT LOWER(ename) AS Name, LENGTH(ename) AS Characters
+FROM emp
+ORDER BY LENGTH(ename) ASC, Name ASC;
 
 
 

@@ -3,13 +3,13 @@
 -- File: 111-create-table-1.sql
 
 CREATE TABLE person (
-    id INTEGER PRIMARY KEY NOT NULL,
-    last VARCHAR NOT NULL,
-    first VARCHAR NOT NULL,
-    phone VARCHAR NOT NULL,
-    zip VARCHAR NOT NULL,
-    city VARCHAR NOT NULL,
-    address VARCHAR NOT NULL
+    id INTEGER UNIQUE PRIMARY KEY NOT NULL,
+    last VARCHAR(255) NOT NULL,
+    first VARCHAR(255) NOT NULL,
+    phone VARCHAR(255) NOT NULL,
+    zip VARCHAR(255) NOT NULL,
+    city VARCHAR(255) NOT NULL,
+    address VARCHAR(255) NOT NULL
 );
 
 

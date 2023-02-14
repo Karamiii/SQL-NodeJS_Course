@@ -4,13 +4,11 @@
 
 
 CREATE TABLE inventory (
-  id INTEGER PRIMARY KEY NOT NULL,
-  item VARCHAR NOT NULL,
+  id INTEGER UNIQUE PRIMARY KEY NOT NULL,
+  item VARCHAR(255) NOT NULL,
   worth INTEGER NOT NULL,
-  comment VARCHAR
+  comment VARCHAR(10000)
 );
-
-
 
 
 
