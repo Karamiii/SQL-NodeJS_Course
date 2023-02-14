@@ -9,7 +9,8 @@ WHEN ename LIKE 'A%' OR ename LIKE 'M%' OR ename LIKE 'J%' THEN LOWER(job)
 ELSE job
 END AS job
 FROM emp
-ORDER BY LOWER(ename), LOWER(job);
+ORDER BY LOWER(ename) ASC
+        , LOWER(job)  ASC;
 
 
 

@@ -7,7 +7,7 @@
 UPDATE emp
 SET comm = CASE
 WHEN deptno = 30 AND (comm IS NULL OR comm = 0) THEN 100
-WHEN deptno = 30 AND (comm IS NOT NULL OR comm <> 0)THEN comm * 1.05
+WHEN deptno = 30 AND (comm IS NOT NULL OR comm <> 0)THEN ROUND(comm * 1.05, 1)
 ELSE comm
 END;
 

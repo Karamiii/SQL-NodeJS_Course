@@ -4,7 +4,7 @@
 
 
 
-SELECT COUNT(*) AS "Count of Managers"
+SELECT COUNT(*) AS "count of managers"
 FROM emp
 WHERE UPPER(job) = 'MANAGER' OR UPPER(job) = 'PRESIDENT'
 ;

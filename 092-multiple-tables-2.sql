@@ -3,11 +3,11 @@
 -- File: 092-multiple-tables-2.sql
 
 
-SELECT DISTINCT job
+SELECT emp.job
 FROM emp
 JOIN dept ON emp.deptno = dept.deptno
 WHERE UPPER(dept.loc) = 'BOSTON' OR UPPER(dept.loc) = 'NEW YORK'
-ORDER BY job;
+ORDER BY job ASC;
 
 
 

@@ -8,8 +8,8 @@ SELECT emp.ename, dept.dname
 FROM emp
 JOIN dept ON emp.deptno = dept.deptno
 WHERE emp.sal > 1100 AND emp.sal <= 2200
-AND emp.ename LIKE '%a%'
-ORDER BY emp.ename;
+AND UPPER(emp.ename) LIKE '%a%'
+ORDER BY emp.ename ASC;
 
 
 

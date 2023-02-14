@@ -5,7 +5,7 @@
 
 SELECT ename AS Name, LENGTH(ename) AS Characters
 FROM emp
-ORDER BY LENGTH(ename), ename
+ORDER BY LENGTH(ename), ename ASC
 ;
 
 

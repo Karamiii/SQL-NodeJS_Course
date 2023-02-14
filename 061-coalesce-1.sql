@@ -9,8 +9,8 @@ SELECT  deptno
 AS      comm
 FROM    emp
 WHERE   deptno = 30
-ORDER BY ename
-        , comm
+ORDER BY ename ASC
+        , comm  ASC
 ;
 
 

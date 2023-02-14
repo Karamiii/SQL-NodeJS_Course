@@ -3,9 +3,11 @@
 -- File: 071-functions-1.sql
 
 
-SELECT LOWER(ename) as Name, LOWER(job) AS Job, sal AS Salary
+SELECT LOWER(ename) AS Name, LOWER(job) AS Job, sal AS Salary
 FROM emp
-ORDER BY ename, job;
+ORDER BY ename ASC
+        ,  job ASC
+;
 
 
 

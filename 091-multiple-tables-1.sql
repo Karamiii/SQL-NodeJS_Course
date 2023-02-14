@@ -6,8 +6,8 @@
 SELECT emp.ename, emp.deptno, dept.dname
 FROM emp
 JOIN dept ON emp.deptno = dept.deptno
-WHERE UPPER(dept.loc) = "DALLAS" OR UPPER(emp.job) = "SALESMAN"
-ORDER BY emp.ename;
+WHERE UPPER(dept.loc) = 'DALLAS' OR UPPER(emp.job) = 'SALESMAN'
+ORDER BY emp.ename ASC;
 
 
 

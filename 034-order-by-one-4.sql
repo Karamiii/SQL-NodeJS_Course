@@ -11,9 +11,9 @@ AS     'Monthly Salary'
 AS     'Comm'
 FROM    emp
 WHERE   comm > sal * 1.1
-ORDER BY ename
-       , sal
-       , comm
+ORDER BY ename ASC
+       , sal ASC
+       , comm ASC
 ;
 
 

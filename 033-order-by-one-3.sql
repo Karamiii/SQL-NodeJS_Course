@@ -9,7 +9,8 @@ SELECT deptno AS 'Dept'
         , CAST(ROUND((sal * 12) * 0.31) AS INTEGER) AS Taxes
 FROM emp
 WHERE deptno = 10
-ORDER BY deptno, ename;
+ORDER BY deptno ASC, ename ASC
+;
 
 
 
