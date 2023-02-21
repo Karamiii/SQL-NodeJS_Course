@@ -5,7 +5,7 @@
 
 SELECT COUNT(*) AS "count of dept 30"
 FROM emp
-WHERE deptno = '30'
+WHERE deptno = 30
 ;
 
 

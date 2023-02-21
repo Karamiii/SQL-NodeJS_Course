@@ -8,7 +8,7 @@ SELECT  ename
         , sal*1.15
 AS      "new salary"
 FROM    emp
-WHERE   mgr = (SELECT empno FROM emp WHERE ename = 'BLAKE')
+WHERE   mgr = (SELECT empno FROM emp WHERE UPPER(ename) = 'BLAKE')
 ORDER BY "new salary" ASC
         , ename ASC
 ;
